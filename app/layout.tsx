@@ -14,16 +14,16 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="en" className={theme}>
       <body className="flex h-screen bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900">
         {/* Sidebar */}
-        <aside className="w-64 bg-gray-800/90 dark:bg-gray-200/90 p-6 border-r border-neon-pink/50 dark:border-neon-cyan/50">
-          <h1 className="text-3xl font-extrabold mb-8 text-neon-cyan dark:text-neon-pink">
-            Neon Events
+        <aside className="w-64 bg-gray-800/90 dark:bg-gray-200/90 p-6 border-r border-cyber-orange/50 dark:border-cyber-green/50">
+          <h1 className="text-3xl font-extrabold mb-8 text-cyber-green dark:text-cyber-orange">
+            Cyber Pulse
           </h1>
           <nav>
             <ul className="space-y-3">
               <li>
                 <a
                   href="/"
-                  className="block p-3 rounded-md bg-neon-cyan/20 dark:bg-neon-pink/20 text-neon-cyan dark:text-neon-pink hover:bg-neon-cyan/40 dark:hover:bg-neon-pink/40 transition-colors duration-300"
+                  className="block p-3 rounded-md bg-cyber-green/20 dark:bg-cyber-orange/20 text-cyber-green dark:text-cyber-orange hover:bg-cyber-green/40 dark:hover:bg-cyber-orange/40 transition-colors duration-300"
                 >
                   Real Time
                 </a>
@@ -31,7 +31,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               <li>
                 <a
                   href="/histories"
-                  className="block p-3 rounded-md bg-neon-cyan/20 dark:bg-neon-pink/20 text-neon-cyan dark:text-neon-pink hover:bg-neon-cyan/40 dark:hover:bg-neon-pink/40 transition-colors duration-300"
+                  className="block p-3 rounded-md bg-cyber-green/20 dark:bg-cyber-orange/20 text-cyber-green dark:text-cyber-orange hover:bg-cyber-green/40 dark:hover:bg-cyber-orange/40 transition-colors duration-300"
                 >
                   Histories
                 </a>
@@ -40,7 +40,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </nav>
           <button
             onClick={toggleTheme}
-            className="mt-8 w-full p-3 bg-neon-cyan dark:bg-neon-pink text-gray-900 rounded-md hover:bg-neon-cyan-dark dark:hover:bg-neon-pink-dark transition-colors duration-300"
+            className="mt-8 w-full p-3 bg-cyber-green dark:bg-cyber-orange text-gray-900 rounded-md hover:bg-cyber-green-dark dark:hover:bg-cyber-orange-dark transition-colors duration-300"
           >
             {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
           </button>

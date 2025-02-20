@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neon-cyan': '#00ffff',
-        'neon-pink': '#ff00ff',
-        'neon-cyan-dark': '#00cccc',
-        'neon-pink-dark': '#cc00cc',
+        'cyber-green': '#00FF7F',
+        'cyber-orange': '#FF4500',
+        'cyber-green-dark': '#00CC66',
+        'cyber-orange-dark': '#CC3700',
       },
     },
   },

@@ -2,6 +2,7 @@
 
 import { useState, ReactNode } from 'react';
 import './globals.css';
+import Link from 'next/link';
 
 export default function Layout({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState('dark');
@@ -21,20 +22,20 @@ export default function Layout({ children }: { children: ReactNode }) {
           <nav>
             <ul className="space-y-3">
               <li>
-                <a
+                <Link
                   href="/"
                   className="block p-3 rounded-md bg-neon-cyan/20 dark:bg-neon-pink/20 text-neon-cyan dark:text-neon-pink hover:bg-neon-cyan/40 dark:hover:bg-neon-pink/40 transition-colors duration-300"
                 >
                   Real Time
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/histories"
                   className="block p-3 rounded-md bg-neon-cyan/20 dark:bg-neon-pink/20 text-neon-cyan dark:text-neon-pink hover:bg-neon-cyan/40 dark:hover:bg-neon-pink/40 transition-colors duration-300"
                 >
                   Histories
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
